@@ -1,0 +1,137 @@
+@import url(global.css);
+
+.tela-cadastro {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-cinza-escuro);
+  background-image: url(img/pagina-cadastro.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.login-cadastro {
+  display: flex;
+  position: fixed;
+  top: 2.5rem;
+  margin-right: 63.5rem;
+  width: 7.31rem;
+  height: 2.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9.37rem;
+  width: 22rem;
+  height: 26rem;
+  border-radius: 0.18rem;
+  background-color: var(--cor-cinza-escuro);
+  box-shadow: var(--cor--box-shadow);
+}
+
+.cadastro-titulo {
+  display: flex;
+  justify-content: flex-start;
+  width: 4.2rem;
+  height: 1.62rem;
+  font-size: 2rem;
+  color: var(--cor--branca);
+  margin-left: -10rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-family: var(--fonte--principal);
+  font-weight: 600;
+}
+
+.login-input-usuario {
+  position: relative;
+}
+
+.input-nome,
+.input-username,
+.input-email,
+.input-senha,
+.input-confirmar-senha {
+  position: absolute;
+  white-space: nowrap;
+  width: 3.18rem;
+  height: 0.625rem;
+  color: var(--cor--branca);
+  font-weight: 400;
+  font-size: 0.71rem;
+  line-height: 0.61rem;
+  margin-top: 0.31rem;
+  margin-left: 0.62rem;
+  font-family: var(--fonte--principal);
+}
+
+.input-text {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: var(--cor-cinza-clara);
+  border: none;
+  width: 13.87rem;
+  height: 2.43rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.125rem;
+  font-size: 0.65rem;
+  padding-left: 0.62rem;
+  padding-top: 0.5rem;
+  outline: none;
+}
+.input-text:focus {
+  outline: none;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+.botao-cadastrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.87rem;
+  height: 1.85rem;
+  border-radius: 0.31rem;
+  background-color: var(--cor-laranja);
+  border: none;
+  cursor: pointer;
+}
+
+.cadastar-button-text {
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 0.78rem;
+  letter-spacing: 0.031rem;
+  color: var(--cor--branca);
+  font-family: var(--fonte--principal);
+}
+
+.fazer-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fazer-login-text {
+  text-decoration: none;
+  color: var(--cor--branca);
+  font-family: var(--fonte--principal);
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 0.78rem;
+  margin-top: 0.8rem;
+  white-space: nowrap;
+}
+
+.fazer-login-text:hover {
+  color: #02000d;
+}

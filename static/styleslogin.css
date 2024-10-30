@@ -1,0 +1,236 @@
+@import url(global.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #3c3c3c;
+  background-image: url(img/pagina-cadastro.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.login-logo {
+  display: flex;
+  position: fixed;
+  top: 2.5rem;
+  margin-right: 63.5rem;
+  width: 7.31rem;
+  height: 2.5rem;
+}
+
+.login-imagem-center {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9.37rem;
+  width: 22rem;
+  height: 26rem;
+  border-radius: 0.18rem;
+  background-color: var(--cor-cinza-escuro);
+  box-shadow: var(--cor--box-shadow);
+}
+
+.login-titulo {
+  display: flex;
+  width: 4.2rem;
+  height: 1.62rem;
+  color: var(--cor--branca);
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-family: var(--fonte--principal);
+}
+
+.login-input-usuario {
+  position: relative;
+}
+
+.input-usuario,
+.input-senha {
+  position: absolute;
+  white-space: nowrap;
+  width: 3.18rem;
+  height: 0.625rem;
+  color: var(--cor--branca);
+  font-weight: 400;
+  font-size: 0.6rem;
+  line-height: 0.61rem;
+  margin-top: 0.5rem;
+  margin-left: 0.62rem;
+  font-family: var(--fonte--principal);
+}
+
+.input-text {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: var(--cor-cinza-clara);
+  border: none;
+  width: 16rem;
+  height: 3rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.125rem;
+  font-size: 0.65rem;
+  padding-left: 0.62rem;
+  padding-top: 0.6rem;
+  outline: none;
+}
+.input-text:focus {
+  outline: none;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 2rem;
+  border-radius: 0.31rem;
+  background-color: var(--cor-laranja);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-button-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 0.78rem;
+  letter-spacing: 0.031rem;
+  color: var(--cor--branca);
+  font-family: var(--fonte--principal);
+}
+
+.login-ou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.login-ou-text {
+  font-family: var(--fonte--principal);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.74rem;
+  color: var(--cor--branca);
+  text-align: center;
+}
+
+.login-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 2rem;
+  margin-top: 1rem;
+  border-radius: 0.31rem;
+  background-color: var(--cor-cinza-clara);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.login-signup-text {
+  font-family: var(--fonte--principal);
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 0.78rem;
+  color: var(--cor--branca);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.login-esqueceu-senha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-esqueceu-senha-text {
+  text-decoration: none;
+  color: var(--cor--branca);
+  display: flex;
+  width: 5.93rem;
+  height: 0.81rem;
+  font-family: var(--fonte--principal);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.78rem;
+  margin-top: 0.75rem;
+  white-space: nowrap;
+}
+
+.login-relembrar {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.login-remember-usuario {
+  width: 5rem;
+  height: 0.81rem;
+  font-family: var(--fonte--principal);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.78rem;
+  white-space: nowrap;
+  color: var(--cor--branca);
+}
+
+.mensagem-erro {
+  position: absolute;
+  width: 15rem;
+  height: 7rem;
+  margin-top: 2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--cor-cinza-escuro);
+  box-shadow: var(--cor--box-shadow);
+  color: var(--cor--branca);
+  border-radius: 5px;
+  text-align: left;
+  display: block;
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.mensagem-erro ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 600;
+  font-family: var(--fonte--principal);
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.button-novamente {
+  width: 9rem;
+  height: 2.2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fonte--principal);
+  box-shadow: var(--cor--box-shadow);
+  margin-left: 0.3rem;
+  background-color: var(--cor-laranja);
+  color: var(--cor--branca);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
